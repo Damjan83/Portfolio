@@ -1,0 +1,40 @@
+//Config
+@import 'config/_mediaQueries';
+
+@import 'base/normalize';
+@import 'base/config';
+@import 'base/fonts';
+@import 'base/base';
+
+// Components
+@import 'components/header';
+@import 'components/navigation';
+@import 'components/burger-menu';
+@import 'components/dark-light-mode';
+@import 'components/arrow-down';
+@import 'components/form-contact-me';
+@import 'components/footer';
+
+
+
+// Layout
+@import 'layout/theme';
+@import 'layout/about-me';
+@import 'layout/welcome';
+@import 'layout/skills';
+@import 'layout/projects';
+@import 'layout/section-title-text';
+
+
+
+
+
+// https://www.theodinproject.com/
+
+// switch zajedno sa navigacijom -
+// welcome i strelica mora u header, h1 mora biti text -
+// section klasa = container-
+// section title klasa =  section-title, h2 mora biti text-
+// container-about-me__photo-text klasa = about-me__container-
+// container-skills-icons-first-row, container-skills-icons-second-row = treba da ima istu klasu-
+// promeniti skill-icons u listu

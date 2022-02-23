@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="dist/css/main.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="main-nav">
+          <div class="main-nav__burger">
+            <div class="main-nav__burger-line1 main-nav__burger-line"></div>
+            <div class="main-nav__burger-line2 main-nav__burger-line"></div>
+            <div class="main-nav__burger-line3 main-nav__burger-line"></div>
+          </div>
+            <ul class="main-nav__menu">
+              <li class="main-nav__menu-item">
+                <a class="main-nav__menu-link" href="#">Home</a>
+                <a class="main-nav__menu-link" href="#about-me">About</a>
+                <a class="main-nav__menu-link" href="#">Project</a>
+                <a class="main-nav__menu-link" href="#">Contact</a>
+              </li>
+            </ul>
+            <div class="switch">
+              <input type="checkbox" class="switch__checkbox" id="switchCheckbox">
+              <label for="switchCheckbox" class="switch__label">
+                <img class="switch__icon switch__icon--moon" src="./dist/assets/images/moon.png" alt="moon">
+                <img class="switch__icon switch__icon--sun" src="./dist/assets/images/sun.png" alt="sun">             
+                  <div class="switch__ball"></div>
+              </label>
+            </div> 
+        </nav>    
+        <div class="container-welcome">
+          <div class="container-welcome__text">
+             <div class="container-welcome__text-name"><h1>damjan pokrajac</h1>
+               <div class="slide-bottom"></div>
+             </div>
+             <h1 class="container__text-desc-top">front-end</h1>
+             <h1 class="container__text-desc-bottom">web developer</h1>
+          </div>       
+        </div>   
+        <div class="arrow-down">
+          <div class="arrow bounce">
+            <a href="#about-me">
+            <img src="./dist/assets/images/arrow-down.png"  alt="arrow">
+            </a>
+          </div>
+         </div>      
+    </header>
+    
+    <main>       
+       <section class="container about-me">      
+         <div class="about-me__title">
+           <h2 class="about-me__title-text">about me</h2>
+         </div>
+         <div class="about-me__container" id="about-me">
+           <div class="about-me__photo">
+
+           </div>
+           <div class="about-me__text">
+            <p class="about-me__text-desc">Hello World! I'm Damjan Pokrajac, a Front-End Web Developer based out of Serbia, Belgrade. Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. </p>
+            <p class="about-me__text-desc">The purpose of lorem ipsum is to create a natural looking block of text (sentence, paragraph, page, etc.) that doesn't distract from the layout. A practice not without controversy, laying out pages with meaningless filler text can be very useful when the focus is meant to be on design, not content.</p>
+            <p class="about-me__text-desc">The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their software. Today it's seen all around the web; on templates, websites, and stock designs. Use our generator to get your own, or read on for the authoritative history of lorem ipsum.</p>
+           </div>
+         </div>
+       </section>
+
+       <section class="container skills">
+        <div class="skills__title">
+          <p class="skills__title-text">skills</p>
+        </div>
+        <ul class="skills-icons__container">
+          <li class="skill-icons">
+            <img class="skill-icons__img" src="./dist/assets/images/html.png" alt="html">
+            <p class="skill-icons__text">html5</p>
+          </li>
+          <li class="skill-icons">
+            <img class="skill-icons__img" src="./dist/assets/images/css-3.png" alt="css">
+            <p class="skill-icons__text">css</p>
+          </li>
+          <li class="skill-icons">
+            <img class="skill-icons__img" src="./dist/assets/images/javascript.png" alt="javascript">
+            <p class="skill-icons__text">javascript + es6</p> 
+          </li>
+          <li class="skill-icons">
+            <img class="skill-icons__img" src="./dist/assets/images/sass.png" alt="sass">
+            <p class="skill-icons__text">sass</p>
+          </li>
+          <li class="skill-icons">
+            <img class="skill-icons__img" src="./dist/assets/images/gulp.png" alt="html">
+            <p class="skill-icons__text">gulp</p>
+          </li>
+          <li class="skill-icons">
+            <img class="skill-icons__img" src="./dist/assets/images/bootstrap.png" alt="css">
+            <p class="skill-icons__text">boostrap</p>
+          </li>
+           <li class="skill-icons">
+            <img class="skill-icons__img" src="./dist/assets/images/git.png" alt="javascript">
+            <p class="skill-icons__text">git</p> 
+           </li>
+           <li class="skill-icons">
+            <img class="skill-icons__img" src="./dist/assets/images/responsive.png" alt="sass">
+            <p class="skill-icons__text">responsive design</p>
+           </li>  
+        </ul>
+       </section>
+
+       <section class="container projects">
+         <div class="projects__title">
+           <p class="projects__title-text">projects</p>
+         </div>
+       </section>
+
+      <footer class="container contact">
+        <div class="contact__title">
+          <p class="contact__title-text">contact me</p>
+        </div>
+
+        <form class="contact-form">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+          <label for="email">E-mail</label>
+          <input type="text" id="email" name="firstname" placeholder="Your email..">
+
+          <label for="subject">Subject</label>
+          <textarea class="sub" id="subject" name="subject" placeholder="Write something.."></textarea>
+        </form>
+
+        <div class="back-to-top">
+          <p class="back-top-top__text">back to top</p>
+        </div>
+      </footer>
+
+    </main>
+    <script src="dist/js/bundle.js"></script>
+</body>
+</html>

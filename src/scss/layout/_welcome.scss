@@ -1,0 +1,67 @@
+.container-welcome {
+    width: 100%;
+    max-width: 1180px;
+    height: 24.25rem;
+    color: map-get($colors , c-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+
+    @include for-size(phone-large) {
+        height: 50.25rem;
+        align-items: baseline;
+    }
+}
+
+.dark .container-welcome {
+    color: map-get($colors , text-primary);
+}
+
+.container-welcome__text {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: bold;    
+    width: 100%;
+    max-width: 19.5rem;
+    letter-spacing: 0.1875rem;
+
+    @include for-size(phone-large) {
+        margin-left: 4.375rem;
+        font-size: 1.2rem;
+        max-width: 28rem;
+    }
+}
+
+.container__text-name, .container__text-desc-top, .container__text-desc-bottom {
+    margin: 0;
+}
+
+.container__text-desc-top, .container__text-desc-bottom {
+    margin-top: 10px;
+}
+
+.container-welcome__text-name {
+    margin: 0;
+    position: relative;
+}
+
+.slide-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0.25rem;
+    width: 0%;
+    background-color: map-get($colors , menu-hover);
+    animation: sideToLeft 2s ease forwards;
+}
+
+@keyframes sideToLeft {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}

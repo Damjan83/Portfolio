@@ -1,0 +1,25 @@
+.container {
+    width: 100%;
+    height: auto;
+    max-width: 1180px;
+    margin: 4.25rem auto 0;
+}
+
+.skills__title, .projects__title, .contact__title {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.skills__title-text, .projects__title-text, .contact__title-text {
+    color: map-get($colors , c-white);
+    font-size: 1.875em;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 0.25rem solid map-get($colors , menu-hover);
+    letter-spacing: 0.1875rem;
+}
+
+

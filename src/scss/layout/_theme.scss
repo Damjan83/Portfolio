@@ -1,0 +1,40 @@
+.dark {
+
+    .main-nav__menu {
+        background-color: map-get($colors , c-white);
+    }
+
+    .main-nav__menu-link {
+        color: map-get($colors , text-primary);
+    }
+
+    .main-nav__burger-line {
+        background-color: map-get($colors, c-black);
+    }
+    
+    .about-me__title-text {
+        color: map-get($colors , text-primary);
+    }
+
+    .about-me__text {
+        color: map-get($colors , text-primary);
+    }
+    
+    .skill-icons {
+        filter: grayscale(0) invert(0);
+    }
+
+    .skills__title-text {   
+        color: map-get($colors , text-primary);
+    }
+
+    .contact__title-text {
+        color: map-get($colors , text-primary);
+    }
+
+    .projects__title-text {
+        color: map-get($colors , text-primary);
+    }
+
+   
+}

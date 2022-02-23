@@ -1,0 +1,10 @@
+.back-to-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.text {
+        text-transform: uppercase;
+    }
+}
+
