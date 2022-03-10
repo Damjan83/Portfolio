@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="home">
         <nav class="main-nav">
           <div class="main-nav__burger">
             <div class="main-nav__burger-line1 main-nav__burger-line"></div>
@@ -47,15 +47,15 @@
             <img src="./dist/assets/images/arrow-down.png"  alt="arrow">
             </a>
           </div>
-         </div>      
+         </div>     
     </header>
     
     <main>       
-       <section class="container about-me">      
+       <section class="container about-me" id="about-me">      
          <div class="about-me__title">
            <h2 class="about-me__title-text">about me</h2>
          </div>
-         <div class="about-me__container" id="about-me">
+         <div class="about-me__container">
            <div class="about-me__photo">
 
            </div>
@@ -67,7 +67,7 @@
          </div>
        </section>
 
-       <section class="container skills">
+      <section class="container skills">
         <div class="skills__title">
           <p class="skills__title-text">skills</p>
         </div>
@@ -101,16 +101,105 @@
             <p class="skill-icons__text">git</p> 
            </li>
            <li class="skill-icons">
-            <img class="skill-icons__img" src="./dist/assets/images/responsive.png" alt="sass">
+            <img class="skill-icons__img" src="./dist/assets/images/responsive.png" alt="responsive">
             <p class="skill-icons__text">responsive design</p>
            </li>  
+           <li class="skill-icons">
+            <img class="skill-icons__img" src="./dist/assets/images/rest-api.png" alt="api">
+            <p class="skill-icons__text">api</p>
+           </li> 
         </ul>
-       </section>
+      </section>
 
        <section class="container projects">
          <div class="projects__title">
            <p class="projects__title-text">projects</p>
          </div>
+         <div class="project-desc">
+           <div class="project">
+              <div class="project-one">
+                <img class="project-one__img" src="./dist/assets/images/flags.png" alt="flags">
+              </div>             
+              <div class="project-info">
+                <div class="project-info__text">
+                  <h2 class="text-title">REST Countries API</h2>
+                  <p class="text-desc">Do you know all the flags of the world?</p>
+                  <p class="text-desc">On this website you can find out what the flags of different countries of the world look like.</p>
+                  <p class="text-desc">You can also find information about countries: native name, population, region, language and many more.</p>
+                  <p class="text-desc">Check it out!</p>
+                  <p class="text-desc">Made whit:</p>
+                  <div class="made-whit">
+                    <img class="made-whit-img" src="./dist/assets/images/html.png" alt="html">
+                    <img class="made-whit-img" src="./dist/assets/images/css-3.png" alt="css">
+                    <img class="made-whit-img" src="./dist/assets/images/javascript.png" alt="javascript">
+                    <img class="made-whit-img" src="./dist/assets/images/rest-api.png" alt="api">
+                  </div>
+                </div>
+              </div>
+           </div>
+
+           <div class="project">
+            <div class="project-two">              
+              <img class="project-two__img" src="./dist/assets/images/crowdfunding.png" alt="crowdfunding">
+            </div>             
+            <div class="project-info">
+              <div class="project-info__text">
+                <h2 class="text-title">Crowdfunding product page</h2>
+                <p class="text-desc">A Beautiful & handcrafted monitor stand to reduce neck and eye strain.</p>
+                <p class="text-desc">The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that elevates your screen to a more comfortable viewing height. You can support the project, choose which monitor stand you want and how much money to donate.</p>
+                <p class="text-desc">Back this project!</p>
+                <p class="text-desc">Made whit:</p>
+                <div class="made-whit">
+                  <img class="made-whit-img" src="./dist/assets/images/html.png" alt="html">
+                  <img class="made-whit-img" src="./dist/assets/images/css-3.png" alt="css">
+                  <img class="made-whit-img" src="./dist/assets/images/javascript.png" alt="javascript">
+                </div>
+              </div>
+            </div>
+           </div>
+
+           <div class="project">
+            <div class="project-three">              
+              <img class="project-three__img" src="./dist/assets/images/e-commerce.png" alt="e-commerce">
+            </div>             
+            <div class="project-info">
+              <div class="project-info__text">
+                <h2 class="text-title">E-commerce product page</h2>
+                <p class="text-desc">You love sneakers, this is the right place for you.</p>
+                <p class="text-desc">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+                <p class="text-desc">You can choose how many pairs of sneakers you want, add check the cart</p>
+                <p class="text-desc">Made whit:</p>
+                <div class="made-whit">
+                  <img class="made-whit-img" src="./dist/assets/images/html.png" alt="html">
+                  <img class="made-whit-img" src="./dist/assets/images/css-3.png" alt="css">
+                  <img class="made-whit-img" src="./dist/assets/images/javascript.png" alt="javascript">
+                </div>
+              </div>
+            </div>
+           </div>
+
+           <div class="project">
+            <div class="project-four">              
+              <img class="project-four__img" src="./dist/assets/images/hangman.png" alt="e-commerce">
+            </div>             
+            <div class="project-info">
+              <div class="project-info__text">
+                <h2 class="text-title">Hangman game</h2>
+                <p class="text-desc">Simple hangman game whit timer.</p>
+                <p class="text-desc">To win in this game, you need to guess 5 words. You have 6 lives or 6 missed letters, if you miss a letter, one body part is added.</p>
+                <p class="text-desc">You can keep track of missed letters, correct words, time for each correct word, body parts, how many lives are left, how many correct words you have.</p>
+                <p class="text-desc">Made whit:</p>
+                <div class="made-whit">
+                  <img class="made-whit-img" src="./dist/assets/images/html.png" alt="html">
+                  <img class="made-whit-img" src="./dist/assets/images/css-3.png" alt="css">
+                  <img class="made-whit-img" src="./dist/assets/images/javascript.png" alt="javascript">
+                </div>
+              </div>
+            </div>
+           </div>
+          
+         </div>
+         
        </section>
 
       <footer class="container contact">
@@ -129,8 +218,8 @@
           <textarea class="sub" id="subject" name="subject" placeholder="Write something.."></textarea>
         </form>
 
-        <div class="back-to-top">
-          <p class="back-top-top__text">back to top</p>
+        <div class="back-to-top">       
+            <a class="back-to-top__text" href="#home">back to top</a>
         </div>
       </footer>
 

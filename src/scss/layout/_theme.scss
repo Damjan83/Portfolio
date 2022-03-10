@@ -4,7 +4,8 @@
         background-color: map-get($colors , c-white);
     }
 
-    .main-nav__menu-link {
+    .main-nav__menu-link, .about-me__title-text, .about-me__text, .skills__title-text, .contact__title-text,
+    .projects__title-text, .text-title, .text-desc {
         color: map-get($colors , text-primary);
     }
 
@@ -12,29 +13,8 @@
         background-color: map-get($colors, c-black);
     }
     
-    .about-me__title-text {
-        color: map-get($colors , text-primary);
-    }
-
-    .about-me__text {
-        color: map-get($colors , text-primary);
-    }
-    
-    .skill-icons {
+    .skill-icons, .project-laptop, .made-whit-img {
         filter: grayscale(0) invert(0);
     }
 
-    .skills__title-text {   
-        color: map-get($colors , text-primary);
-    }
-
-    .contact__title-text {
-        color: map-get($colors , text-primary);
-    }
-
-    .projects__title-text {
-        color: map-get($colors , text-primary);
-    }
-
-   
 }
