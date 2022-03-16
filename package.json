@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DavidPavlovic/gulp.git"
+    "url": "git+https://github.com/Damjan83/gulp.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/DavidPavlovic/gulp/issues"
+    "url": "https://github.com/Damjan83/gulp/issues"
   },
-  "homepage": "https://github.com/DavidPavlovic/gulp#readme",
+  "homepage": "https://github.com/Damjan83/gulp#readme",
   "devDependencies": {
     "@babel/core": "^7.13.14",
     "@babel/preset-env": "^7.13.12",
