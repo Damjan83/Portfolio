@@ -17,10 +17,11 @@
           </div>
             <ul class="main-nav__menu">
               <li class="main-nav__menu-item">
-                <a class="main-nav__menu-link" href="#">Home</a>
+                <a class="main-nav__menu-link" href="#home">Home</a>
                 <a class="main-nav__menu-link" href="#about">About</a>
-                <a class="main-nav__menu-link" href="#">Project</a>
-                <a class="main-nav__menu-link" href="#">Contact</a>
+                <a class="main-nav__menu-link" href="#skills">Skills</a>
+                <a class="main-nav__menu-link" href="#project">Project</a>
+                <a class="main-nav__menu-link" href="#contact">Contact</a>
               </li>
             </ul>
             <div class="switch">
@@ -67,7 +68,7 @@
          </div>
        </section>
 
-      <section class="container skills">
+      <section class="container skills" id="skills">
         <div class="skills__title">
           <p class="skills__title-text">skills</p>
         </div>
@@ -115,13 +116,13 @@
         </ul>
       </section>
 
-       <section class="container projects">
+       <section class="container projects" id="project">
          <div class="projects__title">
            <p class="projects__title-text">projects</p>
          </div>
          <div class="project-desc">
            <div class="project">
-              <div class="project-one">
+              <div class="project-one num-one">
                 <img class="project-one__img" src="./dist/assets/images/flags.png" alt="flags">
               </div>             
               <div class="project-info">
@@ -142,8 +143,10 @@
               </div>
            </div>
 
-           <div class="project">
-                        
+           <div class="project project-reverse">          
+            <div class="project-two num-two">              
+              <img class="project-two__img" src="./dist/assets/images/crowdfunding.png" alt="crowdfunding">
+            </div>              
             <div class="project-info">
               <div class="project-info__text">
                 <h2 class="text-title">Crowdfunding product page</h2>
@@ -158,13 +161,10 @@
                 </div>
               </div>
             </div>
-            <div class="project-two">              
-              <img class="project-two__img" src="./dist/assets/images/crowdfunding.png" alt="crowdfunding">
-            </div> 
            </div>
 
            <div class="project">
-            <div class="project-three">              
+            <div class="project-three num-three">              
               <img class="project-three__img" src="./dist/assets/images/e-commerce.png" alt="e-commerce">
             </div>             
             <div class="project-info">
@@ -183,10 +183,10 @@
             </div>
            </div>
 
-           <div class="project">
-            <div class="project-four">              
+           <div class="project project-reverse"> 
+            <div class="project-four num-four">              
               <img class="project-four__img" src="./dist/assets/images/hangman.png" alt="e-commerce">
-            </div>             
+            </div>            
             <div class="project-info">
               <div class="project-info__text">
                 <h2 class="text-title">Hangman game</h2>
@@ -207,7 +207,7 @@
          
        </section>
 
-      <footer class="container contact">
+      <footer class="container contact" id="contact">
         <div class="contact__title">
           <p class="contact__title-text">contact me</p>
         </div>

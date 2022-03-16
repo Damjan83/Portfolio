@@ -12,24 +12,25 @@ const menuLink = document.querySelectorAll('.main-nav__menu-link');*/
      $('#switchCheckbox').on('change', () => {
          $('body').toggleClass('dark');
      })
- })
 
- $(document).ready(() => {
      $('.main-nav__burger').on('click', () => {
         $('.main-nav__menu').toggleClass('is-active');
         $('.main-nav__burger').toggleClass('is-active');
         $('.main-nav__menu-item').toggleClass('is-active');
-        $('.main-nav__menu-link').each((el) => {
-            toggleClass('is-active');
-            
-        })
      })
+
+     $('.main-nav__menu-link').on('click', function(e){     
+        e.preventDefault();
+        $('html,body').animate({
+            scrollTop:$(this.hash).offset().top
+        }, 2000);
+    });
  })
 
- $('a[href^=\\#]').on('click', function(e){     
-    e.preventDefault();
-    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1000);
-});
+
+
+
+ 
 
 
 

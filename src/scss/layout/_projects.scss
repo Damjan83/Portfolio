@@ -10,7 +10,6 @@
 .project-one, .project-two, .project-three, .project-four {
     width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
     position: relative;
 
@@ -28,6 +27,14 @@
         display: flex;
         padding: 0;
         margin-top: 6.25rem;
+    }
+}
+
+.project-reverse {
+    flex-direction: column;
+
+    @include for-size(phone-large) {
+        flex-direction: row-reverse;
     }
 }
 
@@ -73,4 +80,12 @@
     width: 3.125rem;
     margin-right: 0.9375rem;
     filter: grayscale(1) invert(1);
+}
+
+.num-one, .num-three {
+    justify-content: left;
+}
+
+.num-two, .num-four {
+    justify-content: right;
 }
