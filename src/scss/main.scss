@@ -1,7 +1,7 @@
 //Config
 @import 'config/_mediaQueries';
 
-
+//Base
 @import 'base/normalize';
 @import 'base/config';
 @import 'base/fonts';
@@ -16,9 +16,8 @@
 @import 'components/form-contact-me';
 @import 'components/footer';
 
-
-
 // Layout
+@import 'layout/wraper';
 @import 'layout/theme';
 @import 'layout/about-me';
 @import 'layout/welcome';
@@ -27,15 +26,8 @@
 @import 'layout/section-title-text';
 
 
+    
 
 
 
-// https://www.theodinproject.com/
 
-// switch zajedno sa navigacijom -
-// welcome i strelica mora u header, h1 mora biti text -
-// section klasa = container-
-// section title klasa =  section-title, h2 mora biti text-
-// container-about-me__photo-text klasa = about-me__container-
-// container-skills-icons-first-row, container-skills-icons-second-row = treba da ima istu klasu-
-// promeniti skill-icons u listu

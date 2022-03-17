@@ -10,7 +10,7 @@
     align-items: center;
 
     @include for-size(phone-large) {
-        height: 50.25rem;
+        height: 100vh;
         align-items: baseline;
     }
 }

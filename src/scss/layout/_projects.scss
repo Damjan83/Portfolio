@@ -21,7 +21,7 @@
 .project {
     display: block;
     padding: 0 1.25rem;
-    margin-top: 6.25rem;
+    margin-top: 4.25rem;
 
     @include for-size(phone-large) {
         display: flex;
@@ -89,3 +89,4 @@
 .num-two, .num-four {
     justify-content: right;
 }
+

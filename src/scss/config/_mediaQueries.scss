@@ -9,10 +9,13 @@
       @media (min-width: 992px) { @content; }
   
     } @else if $size == desktop-small {
-      @media (min-width: 1200px) { @content; }
+      @media (min-width: 1180px) { @content; }
   
     } 
-      @else if $size == desktop-large{
+      @else if $size == desktop-large {
       @media (min-width: 1920px) { @content; }
     }
+      @else if $size == middle-resolution {
+        @media (min-width: 768px) and (max-width: 1180px) { @content; }
+      }
   }

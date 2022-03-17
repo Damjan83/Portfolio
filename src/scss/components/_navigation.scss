@@ -10,6 +10,7 @@
     @include for-size(phone-large) {
         display: flex;
     }
+ 
 }
 
 .main-nav__menu {
@@ -43,6 +44,10 @@
 
     @include for-size(phone-large) {
         display: flex;
+    }
+
+    @include for-size(middle-resolution) {
+        margin-left: 1.875rem;
     }
 }
 

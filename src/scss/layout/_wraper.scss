@@ -1,0 +1,5 @@
+.wraper {
+    @include for-size(middle-resolution) {
+        margin: 0 30px;
+    }
+}
