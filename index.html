@@ -45,7 +45,8 @@
         </nav>    
         <div class="container-welcome">
           <div class="container-welcome__text">
-             <div class="container-welcome__text-name"><h1>damjan pokrajac</h1>
+             <div class="container-welcome__text-name">
+               <h1 class="text-name__title">damjan pokrajac</h1>
                <div class="slide-bottom"></div>
              </div>
              <h1 class="container__text-desc-top">front-end</h1>
@@ -222,15 +223,16 @@
           <p class="contact__title-text">contact me</p>
         </div>
 
-        <form class="contact-form">
+        <form id="contactForm" class="contact-form">
           <label for="fname">First Name</label>
           <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
           <label for="email">E-mail</label>
-          <input type="text" id="email" name="firstname" placeholder="Your email..">
+          <input type="email" id="email" name="firstname" placeholder="Your email..">
 
           <label for="subject">Subject</label>
           <textarea class="sub" id="subject" name="subject" placeholder="Write something.."></textarea>
+          <button class="btn-get-in-touch" type="submit">Submit</button>
         </form>
 
         <div class="back-to-top">       

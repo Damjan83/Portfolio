@@ -41,6 +41,10 @@
 .project-one__img, .project-two__img, .project-three__img, .project-four__img {
     width: 500px;
     height: auto;
+
+    @include for-size(small-resolution) {
+        justify-content: center;
+    }
 }
 
 .project-info {
