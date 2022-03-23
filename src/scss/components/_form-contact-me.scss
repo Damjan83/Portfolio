@@ -1,9 +1,13 @@
 .contact-form {
     padding: 0 1.25rem;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     @include for-size(phone-large) {
         padding: 0;
+        width: 50%;
     }
 }
 
@@ -67,4 +71,29 @@ form .error-text {
     position: absolute;
     top: 8.9375rem;
     left: 0.25rem;
+}
+
+.contact__text {
+    width: 100%;
+    padding: 0 1.25rem;
+
+    @include for-size(phone-large) {
+        width: 50%;
+    }
+}
+
+.contact__text-desc {
+    font-size: 1.1875em;
+    color: map-get($colors , c-white);
+}
+
+.icon-link__img {
+    width: 2rem;
+    height: auto;
+    margin-right: 1.25rem;
+    filter: grayscale(1) invert(1);
+
+    @include for-size(phone-large) {
+        width: 4rem;
+    }
 }

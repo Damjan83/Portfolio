@@ -1,6 +1,5 @@
 .skills-icons__container {
     display: grid;
-    margin-top: 6.25rem;
     padding: 0 1.25rem;
     column-gap: 3.125rem;
     row-gap: 3.125rem;
@@ -10,7 +9,8 @@
 
     @include for-size(phone-large) {
         padding: 0;
-        grid-template-columns: repeat(4, minmax(0, 1fr));
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        margin-top: 6.25rem;
     }
 
     @include for-size(small-resolution) {
