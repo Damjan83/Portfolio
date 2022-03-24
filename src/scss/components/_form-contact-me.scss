@@ -8,6 +8,10 @@
         padding: 0;
         width: 50%;
     }
+
+    @include for-size(small-resolution) {
+        align-items: center;
+    }
 }
 
 .form__input, textarea {
@@ -64,7 +68,6 @@ input[type=submit] {
 }
 
 .contact__text {
-    width: 100%;
     padding: 0 1.25rem;
 
     @include for-size(phone-large) {

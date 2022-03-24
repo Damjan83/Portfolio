@@ -5,7 +5,7 @@
     }
 
     .main-nav__menu-link, .about-me__title-text, .about-me__text, .skills__title-text, .contact__title-text,
-    .projects__title-text, .text-title, .text-desc, .text-link {
+    .projects__title-text, .text-title, .text-desc, .text-link, .contact__text-desc  {
         color: map-get($colors , text-primary);
     }
 
