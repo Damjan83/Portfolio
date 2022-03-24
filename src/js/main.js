@@ -1,16 +1,16 @@
 $(document).ready(() => {
-    $('#switchCheckbox').on('change', () => {
+    $('#switchCheckbox').on('change', function () {
         $('body').toggleClass('dark');
     })
 
-    $('.main-nav__burger').on('click', () => {
+    $('.main-nav__burger').on('click', function () {
        $('.main-nav__menu').toggleClass('is-active');
        $('.main-nav__burger').toggleClass('is-active');
        $('.main-nav__menu-item').toggleClass('is-active');
     })
 
     if($(window).width() < 768) {
-       $('.main-nav__menu-link').on('click', () => {
+       $('.main-nav__menu-link').on('click', function () {
            $('.main-nav__menu').removeClass('is-active');
            $('.main-nav__burger').removeClass('is-active');
            $('.main-nav__menu-item').removeClass('is-active');
@@ -24,6 +24,10 @@ $(document).ready(() => {
            scrollTop:$(this.hash).offset().top
        }, 1000);
    });
+
+   $('.main-nav__menu-item').on('click', function() {
+       $('.main-nav__menu').removeClass('is-active')
+   })
 
    $("#contactForm").submit(function(event) {
        event.preventDefault();
