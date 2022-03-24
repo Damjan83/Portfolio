@@ -5,7 +5,7 @@
     }
 
     .main-nav__menu-link, .about-me__title-text, .about-me__text, .skills__title-text, .contact__title-text,
-    .projects__title-text, .text-title, .text-desc {
+    .projects__title-text, .text-title, .text-desc, .text-link {
         color: map-get($colors , text-primary);
     }
 
@@ -15,6 +15,10 @@
     
     .skill-icons, .project-laptop, .made-whit-img, .icon-link__img {
         filter: grayscale(0) invert(0);
+    }
+
+    .about-me__photo-img {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
 
 }

@@ -1,10 +1,9 @@
 <?php
+require 'C:\xampp\htdocs\test\mailer\src\Exception.php';
+require 'C:\xampp\htdocs\test\mailer\src\PHPMailer.php';
+require 'C:\xampp\htdocs\test\mailer\src\SMTP.php';
 
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-require 'C:\xampp\composer\vendor\autoload.php';
-
-$mail = new PHPMailer(TRUE);
+$mail = new PHPMailer\PHPMailer\PHPMailer();
 
 try {
    

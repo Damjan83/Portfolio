@@ -44,8 +44,7 @@
     width: auto;
     height: auto;
     border-radius: 0.625rem;
-    box-shadow: 0 0.3125rem 1.25rem 0.125rem map-get($colors , text-primary);
-
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
 }
 
 .about-me__text {

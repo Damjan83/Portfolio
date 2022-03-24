@@ -1,9 +1,8 @@
-.contact-form {
+.form {
     padding: 0 1.25rem;
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center;
 
     @include for-size(phone-large) {
         padding: 0;
@@ -11,7 +10,7 @@
     }
 }
 
-input[type=text], input[type=email], select, textarea {
+.form__input, textarea {
     width: 100%;
     max-width: 31.25rem; 
     display: flex;
@@ -21,7 +20,6 @@ input[type=text], input[type=email], select, textarea {
     border-radius: 0.25rem; 
     box-sizing: border-box;  
     resize: vertical;
-    margin-bottom: 0.75rem;
 }
   
 input[type=submit] {
@@ -42,6 +40,7 @@ input[type=submit] {
     margin-top: 1.25rem;
     border-radius: 0.3125rem;
     border: 0.0625rem solid map-get($colors , c-gray);
+    cursor: pointer;
 
     &__text {
         font-size: 0.75rem;
@@ -51,26 +50,17 @@ input[type=submit] {
     }
 }
 
-form.error input[type=email]{
+.has-error {
     border-color: map-get($colors , c-red);
 }
 
-form .error-text {
-    position: absolute;
-    top: 9.1rem;
-    left: 1.875rem;
+.form__error {
     font-size: 0.75em;
     font-weight: bold;
     letter-spacing: 0.0625rem;
     color: map-get($colors , c-red);
-    margin: 0;
-}
-
-.error-img {
-    width: 1rem;
-    position: absolute;
-    top: 8.9375rem;
-    left: 0.25rem;
+    margin: 5px;
+    visibility: hidden;
 }
 
 .contact__text {
@@ -94,6 +84,6 @@ form .error-text {
     filter: grayscale(1) invert(1);
 
     @include for-size(phone-large) {
-        width: 4rem;
+        width: 2.5rem;
     }
 }
