@@ -2,7 +2,11 @@
   width: 100%;
   height: auto;
   position: absolute;
-  bottom: 30px;
+  bottom: 50px;
+
+  @include for-size(phone-large) {
+      bottom: 0;
+  }
 }
 
 .arrow {
@@ -29,3 +33,5 @@
         transform: translateY(-15px);
     }
 }
+
+

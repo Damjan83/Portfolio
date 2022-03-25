@@ -16,12 +16,13 @@
     @include for-size(phone-large) {
         width: 50%;
     }
+
 }
 
 .project {
     display: block;
     padding: 0 1.25rem;
-    margin-top: 4.25rem;
+    margin-top: 2.25rem;
 
     &:first-child {
         margin-top: 0;
@@ -64,6 +65,10 @@
     @include for-size(phone-large) {
         width: 50%;
         text-align: left;
+    }
+
+    @include for-size(middle-resolution) {
+        padding: 0.625rem;
     }
 }
 
@@ -113,6 +118,10 @@
     @include for-size(small-resolution) {
         justify-content: center;
     }
+
+    @include for-size(middle-resolution) {
+        padding: 0.625rem;
+    }
 }
 
 .num-two, .num-four {
@@ -120,6 +129,10 @@
 
     @include for-size(small-resolution) {
         justify-content: center;
+    }
+
+    @include for-size(middle-resolution) {
+        padding: 0.625rem;
     }
 }
 
