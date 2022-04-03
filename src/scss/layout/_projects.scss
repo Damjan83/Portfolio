@@ -20,16 +20,19 @@
 }
 
 .project {
-    display: block;
+    display: flex;
+    flex-direction: column;
     padding: 0 1.25rem;
     margin-top: 2.25rem;
+   
+  
 
     &:first-child {
         margin-top: 0;
     }
    
     @include for-size(phone-large) {
-        display: flex;
+        flex-direction: row;
         padding: 0;
         margin-top: 4.25rem;
 
@@ -39,6 +42,7 @@
     }
 }
 
+
 .project-reverse {
     flex-direction: column;
 
@@ -46,6 +50,18 @@
         flex-direction: row-reverse;
     }
 }
+
+.project-contact {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0 1.25rem;
+
+    @include for-size(phone-large) {
+        flex-direction: row;
+        margin-top: 2.25rem;
+    }
+}
+
 
 .project-one__img, .project-two__img, .project-three__img, .project-four__img {
     width: 500px;
@@ -123,6 +139,8 @@
         padding: 0.625rem;
     }
 }
+
+
 
 .num-two, .num-four {
     justify-content: right;

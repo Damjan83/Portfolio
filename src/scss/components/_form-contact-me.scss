@@ -45,6 +45,7 @@ input[type=submit] {
     border-radius: 0.3125rem;
     border: 0.0625rem solid map-get($colors , c-gray);
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 
     &__text {
         font-size: 0.75rem;
@@ -78,6 +79,17 @@ input[type=submit] {
 .contact__text-desc {
     font-size: 1.1875em;
     color: map-get($colors , c-white);
+}
+
+.icon-link {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.25rem;
+    -webkit-tap-highlight-color: transparent;
+    
+    @include for-size(phone-large) {
+       justify-content: left;
+    }
 }
 
 .icon-link__img {

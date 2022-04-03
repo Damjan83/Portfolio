@@ -32,13 +32,13 @@
 }
 
 .skill-icons__text {
-    color: map-get($colors , text-primary);
+    color: map-get($colors , c-black);
     font-weight: bold;
     letter-spacing: 0.125rem;
 }
 
 .dark .skill-icons__text {
-    color: map-get($colors , text-primary);
+    color: map-get($colors , c-black);
 }
 
 .skill-icons__img {

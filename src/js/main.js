@@ -32,7 +32,7 @@ $(document).ready(() => {
    $("#contactForm").submit(function(event) {
        event.preventDefault();
 
-       // Pokrenes loader
+       $('.loader').show();
        
        const formData = {
            name: $("#fname").val(),
@@ -45,22 +45,45 @@ $(document).ready(() => {
            url: "mailer.php",
            data: formData,
        }).done(function(data) {
-           console.log('hoce')
-           console.log(data);
-           // Pokrenes loader
+
+            setTimeout(function() { 
+                $('.loader').addClass('is-success');
+                $('.loader__content').html('Your message has been sent!')
+            }, 2000);
+                     
+            setTimeout(function() { 
+            $('.loader').hide();
+            }, 5000);
+
+            $('#fname').val('');
+            $("#email").val('');
+            $("#subject").val('');           
+
        }).fail(function(data) {
-           console.log('nece')
-           // Pokrenes loader
+
+            setTimeout(function() { 
+                $('.loader').addClass('has-error');
+                $('.loader__content').html('Something went wrong. Please try again later!')
+            }, 2000);
+
+            setTimeout(function() { 
+                $('.loader').hide();
+            }, 5000);
+
+            $('#fname').val('');
+            $("#email").val('');
+            $("#subject").val('');  
+           
        });
      });
 
      
 
-     $('.form__input-name').on('input', function() {
+    $('.form__input-name').on('input', function() {
        validateNameFild($(this).val());
-   })
+    })
 
-     function validateNameFild (valName) {
+    function validateNameFild (valName) {
        let characters = /^[a-zA-Z]+$/;
        console.log($('.form__input-name').val().length)
        if(!characters.test(valName)) {
@@ -96,10 +119,29 @@ $(document).ready(() => {
            $('.form__error-email').css('visibility', 'hidden')
            $('.form__input-email').removeClass('has-error')
        }
-     }
+     } 
 
-    
+
      
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

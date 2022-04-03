@@ -16,7 +16,7 @@
 }
 
 .dark .container-welcome {
-    color: map-get($colors , text-primary);
+    color: map-get($colors , c-black);
 }
 
 .container-welcome__text {
@@ -45,6 +45,10 @@
 .container-welcome__text-name {
     margin: 0;
     position: relative;
+}
+
+.text-name__title {
+    padding: 16px 0;
 }
 
 .slide-bottom {

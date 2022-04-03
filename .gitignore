@@ -21,3 +21,6 @@ dist/
 
 # Garbage files
 .DS_Store
+
+# Garbage files
+mailer.php

@@ -20,6 +20,7 @@
     position: relative;
     border: 2px solid map-get($colors , c-white);
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .switch__icon {

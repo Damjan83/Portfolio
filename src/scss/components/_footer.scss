@@ -15,6 +15,7 @@
     text-transform: uppercase;
     color: map-get($colors , c-white);
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 
     &:link {
         text-decoration: none;

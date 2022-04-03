@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DamjanPokrajac</title>
     <link rel="stylesheet" href="dist/css/main.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <!--<link rel="manifest" href="/site.webmanifest">-->
 </head>
 <body>
     <header class="header" id="home">
@@ -69,7 +73,7 @@
          </div>
          <div class="about-me__container">
            <div class="about-me__photo">
-            <img class="about-me__photo-img" src="./dist/assets/images/slika1c.jpg" alt="img">
+            <img class="about-me__photo-img" src="./dist/assets/images/mySlika.jpg" alt="img">
            </div>
            <div class="about-me__text">
             <p class="about-me__text-desc">Hello World!</p>
@@ -239,13 +243,13 @@
         <div class="contact__title">
           <p class="contact__title-text">contact me</p>
         </div>
-        <div class="project">
+        <div class="project-contact">
           <form id="contactForm" class="form">
-            <input class="form__input form__input-name" type="text" id="fname" placeholder="Your name..">
+            <input class="form__input form__input-name" type="text" id="fname" placeholder="Your name.." required>
             <span class="form__error form__error-name">Please enter a valid name</span>
-            <input class="form__input form__input-email" type="email" id="email" placeholder="Your email..">
+            <input class="form__input form__input-email" type="email" id="email" placeholder="Your email.." required>
             <span class="form__error form__error-email">Please enter a valid email</span>
-            <textarea class="sub" id="subject" name="subject" placeholder="Write something.."></textarea>
+            <textarea class="sub" id="subject" name="subject" placeholder="Write me something.." maxlength="260" required></textarea>
             <button class="btn-get-in-touch" type="submit">Submit</button>
           </form>
 
@@ -275,6 +279,14 @@
       </footer>
 
     </main>
+
+    <div class="loader">
+        <div class="loader__overlay"></div>
+        <div class="loader__content">
+            Loading
+        </div>   
+    </div>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="dist/js/bundle.js"></script>
     
