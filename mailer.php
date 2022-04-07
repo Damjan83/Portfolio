@@ -22,12 +22,12 @@ try {
     /* SMTP parameters. */
     $mail->SMTPDebug = 2;
     //$mail->isSMTP();
-    $mail->Host = 'smtp.gmail.com';
+    $mail->Host = '';
     $mail->SMTPAuth = true;
     $mail->SMTPSecure = 'tls';
-    $mail->Username = 'damjanpokrajac83@gmail.com';
-    $mail->Password = 'mjanda89';
-    $mail->Port = 465;
+    $mail->Username = '';
+    $mail->Password = '';
+    $mail->Port = ;
     $mail->isHTML(true);
     
     
