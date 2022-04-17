@@ -17,7 +17,7 @@
     @include for-size(phone-small) {
         width: auto;
         padding: 0 1.25rem;
-        font-size: 0.5em;
+        font-size: 0.8em;
     }
 }
 
@@ -37,6 +37,10 @@
         margin-left: 70px;
         font-size: 1.2em;
         max-width: 29.5rem;
+    }
+
+    @include for-size(small-resolution) {
+        font-size: 0.8em; 
     }
 }
 
