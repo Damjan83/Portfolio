@@ -13,36 +13,42 @@
         height: 100vh;
         align-items: baseline;
     }
+
+    @include for-size(phone-small) {
+        width: auto;
+        padding: 0 1.25rem;
+        font-size: 0.5em;
+    }
 }
 
 .dark .container-welcome {
     color: map-get($colors , c-black);
 }
 
-.container-welcome__text {
-    font-size: 0.8rem;
+.welcome__text {
+    font-size: 0.8em;
     text-transform: uppercase;
     font-weight: bold;    
     width: 100%;
     max-width: 19.5rem;
-    letter-spacing: 0.1875rem;
+    letter-spacing: 3px;
 
     @include for-size(phone-large) {
-        margin-left: 4.375rem;
-        font-size: 1.2rem;
-        max-width: 28.5rem;
+        margin-left: 70px;
+        font-size: 1.2em;
+        max-width: 29.5rem;
     }
 }
 
-.container__text-name, .container__text-desc-top, .container__text-desc-bottom {
+.welcome__text-name, .welcome__text-desc-top, .welcome__text-desc-bottom {
     margin: 0;
 }
 
-.container__text-desc-top, .container__text-desc-bottom {
+.welcome__text-desc-top, .welcome__text-desc-bottom {
     margin-top: 10px;
 }
 
-.container-welcome__text-name {
+.welcome__text-name {
     margin: 0;
     position: relative;
 }
@@ -55,7 +61,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 0.25rem;
+    height: 4px;
     width: 0%;
     background-color: map-get($colors , menu-hover);
     animation: sideToLeft 2s ease forwards;
