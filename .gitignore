@@ -17,7 +17,7 @@ coverage
 node_modules/
 
 # Gulp distribution folder
-dist/
+
 
 # Garbage files
 .DS_Store
